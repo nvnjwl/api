@@ -1,0 +1,115 @@
+{
+	"name": "News",
+	"items": [{
+			"_id": "1x1ne3a9og",
+			"msid": "58031353",
+			"title": "India may have underestimated Beijing's resolve: Chinese media",
+			"duration": "00:50",
+			"thumb": "http:\/\/timesofindia.indiatimes.com\/photo.cms?photoid=58031353&pl=31589&pl=34404",
+			"streams": {
+				"Auto": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1ne3a9og\/hls\/master.m3u8",
+				"144p": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1ne3a9og\/b03bd1eb83_F60_144p_100.mp4",
+				"240p": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1ne3a9og\/b03bd1eb83_F51_240p_256.mp4"
+			}
+		}, {
+			"_id": "1x1ne479og",
+			"msid": "58031184",
+			"title": "After 9 bullet shots and 2 months in coma, CRPF officer Chetan returns home",
+			"duration": "01:30",
+			"thumb": "http:\/\/timesofindia.indiatimes.com\/photo.cms?photoid=58031184&pl=61583&pl=34404",
+			"streams": {
+				"Auto": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1ne479og\/hls\/master.m3u8",
+				"144p": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1ne479og\/aa479bea20_F60_144p_100.mp4",
+				"240p": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1ne479og\/aa479bea20_F51_240p_256.mp4"
+			}
+		}, {
+			"_id": "1x1ne4r9og",
+			"msid": "58030929",
+			"title": "'Don't want to create a scene': Sena warns of protest over flying ban",
+			"duration": "01:32",
+			"thumb": "http:\/\/timesofindia.indiatimes.com\/photo.cms?photoid=58030929&pl=25226&pl=34404",
+			"streams": {
+				"Auto": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1ne4r9og\/hls\/master.m3u8",
+				"144p": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1ne4r9og\/adf75525ed_F60_144p_100.mp4",
+				"240p": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1ne4r9og\/adf75525ed_F51_240p_256.mp4"
+			}
+		}, {
+			"_id": "1x1nedy9og",
+			"msid": "58030039",
+			"title": "China vows 'necessary measures' after Dalai Lama visits Arunachal",
+			"duration": "02:28",
+			"thumb": "http:\/\/timesofindia.indiatimes.com\/photo.cms?photoid=58030039&pl=26949&pl=34404",
+			"streams": {
+				"Auto": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1nedy9og\/hls\/master.m3u8",
+				"144p": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1nedy9og\/7445f6e752_F60_144p_100.mp4",
+				"240p": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1nedy9og\/7445f6e752_F51_240p_256.mp4"
+			}
+		}, {
+			"_id": "1x1neby9og",
+			"msid": "58028904",
+			"title": "Sasikala gets VVIP treatment in Bengaluru prison",
+			"duration": "01:48",
+			"thumb": "http:\/\/timesofindia.indiatimes.com\/photo.cms?photoid=58028904&pl=55478&pl=34404",
+			"streams": {
+				"Auto": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1neby9og\/hls\/master.m3u8",
+				"144p": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1neby9og\/dac9114b9a_F60_144p_100.mp4",
+				"240p": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1neby9og\/dac9114b9a_F51_240p_256.mp4"
+			}
+		}, {
+			"_id": "1x1neba9og",
+			"msid": "58028671",
+			"title": "Meet this Bengaluru man who is followed by PM Modi on Twitter",
+			"duration": "00:49",
+			"thumb": "http:\/\/timesofindia.indiatimes.com\/photo.cms?photoid=58028671&pl=23109&pl=34404",
+			"streams": {
+				"Auto": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1neba9og\/hls\/master.m3u8",
+				"144p": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1neba9og\/e5c411ce13_F60_144p_100.mp4",
+				"240p": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1neba9og\/e5c411ce13_F51_240p_256.mp4"
+			}
+		}, {
+			"_id": "1x1nexp9og",
+			"msid": "58028442",
+			"title": "SC dismisses Karnataka plea to review abatement of appeal against Jayalalithaa",
+			"duration": "00:54",
+			"thumb": "http:\/\/timesofindia.indiatimes.com\/photo.cms?photoid=58028442&pl=17186&pl=34404",
+			"streams": {
+				"Auto": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1nexp9og\/hls\/master.m3u8",
+				"144p": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1nexp9og\/0ca64ea8fb_F60_144p_100.mp4",
+				"240p": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1nexp9og\/0ca64ea8fb_F51_240p_256.mp4"
+			}
+		}, {
+			"_id": "1x1nebq9og",
+			"msid": "58028118",
+			"title": "SC liquor ban along highways applies only to vends, not hotels, bars: Ex-top judges",
+			"duration": "01:09",
+			"thumb": "http:\/\/timesofindia.indiatimes.com\/photo.cms?photoid=58028118&pl=40646&pl=34404",
+			"streams": {
+				"Auto": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1nebq9og\/hls\/master.m3u8",
+				"144p": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1nebq9og\/55eaaa30f5_F60_144p_100.mp4",
+				"240p": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1nebq9og\/55eaaa30f5_F51_240p_256.mp4"
+			}
+		}, {
+			"_id": "1x1nexs9og",
+			"msid": "58028062",
+			"title": "Fire breaks out in Merchant Vessel Daniela",
+			"duration": "00:48",
+			"thumb": "http:\/\/timesofindia.indiatimes.com\/photo.cms?photoid=58028062&pl=10791&pl=34404",
+			"streams": {
+				"Auto": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1nexs9og\/hls\/master.m3u8",
+				"144p": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1nexs9og\/6f322cd58f_F60_144p_100.mp4",
+				"240p": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1nexs9og\/6f322cd58f_F51_240p_256.mp4"
+			}
+		}, {
+			"_id": "1x1nexc9og",
+			"msid": "58027984",
+			"title": "Indira Banerjee assumes charge as new Chief Justice of Madras High Court",
+			"duration": "00:59",
+			"thumb": "http:\/\/timesofindia.indiatimes.com\/photo.cms?photoid=58027984&pl=14650&pl=34404",
+			"streams": {
+				"Auto": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1nexc9og\/hls\/master.m3u8",
+				"144p": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1nexc9og\/9e8f6a30ad_F60_144p_100.mp4",
+				"240p": "http:\/\/slike.akamaized.net\/vdo\/1x\/1n\/1x1nexc9og\/9e8f6a30ad_F51_240p_256.mp4"
+			}
+		}
+	]
+}
