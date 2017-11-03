@@ -1,0 +1,151 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <title></title>
+
+  <script>
+  function getQueryParams(qs) {
+    qs = qs.split('+').join(' ');
+    var params = {},
+      tokens,
+      re = /[?&]?([^=]+)=([^&]*)/g;
+    while(tokens = re.exec(qs)) {
+      params[decodeURIComponent(tokens[1].toLowerCase())] = decodeURIComponent(tokens[2]);
+    }
+    return params;
+  }
+  var query = getQueryParams(document.location.search);
+
+  function filterVal(inp, defVal) {
+    if(typeof inp === 'undefined') return defVal;
+    if(inp == '') return defVal;
+    return inp;
+  }
+
+  function filterBoolVal(inp, defVal) {
+    return filterVal(inp, defVal) == 1 ? true : false;
+  }
+
+  function filterURL(inp, defVal) {
+    return decodeURIComponent(filterVal(inp, defVal));
+  }
+  </script>
+  <script type="text/javascript" src="slikewrapper.js"></script>
+  <style>
+  body {
+    margin: 0px;
+    padding: 0px;
+    border-width: 0px;
+    background: #fff
+  }
+
+  video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background-color: black;*/
+  }
+  </style>
+</head>
+
+<body onload="setTimeout(function(){loadVideo();}, 100);">
+  <div id="playerContainer" class=""></div>
+  <script type="text/javascript">
+  function loadVideo() {
+    var jsWebUrl = location.protocol + '//' + location.host;
+    var volume = filterVal(query['settings.volume'], 70);
+    var player;
+    var config = {
+      origin: jsWebUrl,
+      referrer: document.referrer,
+      playerVars: {
+        skipAd: filterBoolVal(query.skipad, false),
+        section: filterVal(query.section, "default"),
+        apikey: filterVal(query.apikey, ""),
+        autoStart: filterBoolVal(query.autostart, true),
+        playerid: filterVal(query.pt, ""),
+        id: filterVal(query.videoid, ""),
+        pid: filterVal(query.pid, ""),
+        sg: filterVal(query.sg, ""),
+        sp: filterVal(query.sp, ""),
+        pagesection: filterVal(query.pagesection, ""),
+        norequire: query.norequire,
+        nextVideoCounter: 5,
+        //nextVideoUrl: filterVal(query.nextapi+"&dontshow="+query.msid+"&callback=cached", ""),
+        nextVideoUrl: filterVal(((typeof query.nextapi != "undefined" && (query.nextapi != "" || query.nextapi != null)) ? query.nextapi + "&dontshow=" + query.msid + "&callback=cached" : ""), ""),
+        msid: filterVal(query.msid, ""),
+        image: decodeURIComponent(filterVal(typeof query.poster !== undefined ? query.poster : query.image, "")),
+        title: filterVal(query.title, ""),
+        shareurl: filterVal(query.shareurl, ""),
+        settings: {
+          lstype: '', //last screen type
+          volume: volume,
+          mute: volume == 1,
+          autoplay: false
+        },
+        controls: {
+          dim: filterBoolVal(query['controls.dim'], false),
+          autoplay: false,
+          fullscreen: filterBoolVal(query['controls.fullscreen'], true),
+          share: !!(filterBoolVal(query.shareurl, false)),
+          adplaypause: filterBoolVal(query['controls.adplaypause'], true),
+        }
+      },
+      events: {
+        onReady: function(e, data) {
+          //S.log('EMBED FILE:::::::::::: Onready is called now', JSON.stringify(arguments));
+          S.log(arguments);
+        }, //ON READY CALLBACK
+        onPlayStart: function(e, data) {
+          //S.log('EMBED FILE:::::::::::: OnStart is called now', JSON.stringify(arguments));
+          S.log(arguments);
+        },
+        onEnd: function(e, data) {
+          //S.log('EMBED FILE:::::::::::: onEnd: is called now', JSON.stringify(arguments));
+          S.log('EMBED FILE:::::::::::: onEnd: is called now');
+        }, //ON MOVIE END CALLBACK                            
+        onStateChange: function(e, data) {
+          //S.log('EMBED FILE:::::::::::: onStateChange: is called now', JSON.stringify(arguments));
+          S.log(arguments);
+        }, //ON LIGHTS ON STATE CHANGE CALLBACK (PLAYING/BUFFERING/PAUSE)
+        onAdEvent: function(adData, data) {
+          //S.log("EMBED FILE:::::::::::: onAdEvent:::::        ", JSON.stringify(arguments))
+        },
+        onFullScreen: function(e, data) {
+          //S.log('EMBED FILE:::::::::::: onFullScreen: is called now', JSON.stringify(arguments));
+          S.log(arguments);
+        }, //ON FULL SCREEN CALLBACK
+        onDimClick: function(e, data) {
+          //S.log('EMBED FILE:::::::::::: onDim: is called now', JSON.stringify(arguments));
+          S.log(arguments);
+        }, //ON LIGHTS ON OFF CALLBACK
+        onEndScreenAutoPlay: function(e, data) {
+          //S.log('EMBED FILE:::::::::::: onAutoPlay is called now', JSON.stringify(arguments));
+          S.log(arguments);
+        },
+        onEndScreenReplay: function(e, data) {
+          //S.log('EMBED FILE:::::::::::: Replay is called now', JSON.stringify(arguments));
+          S.log(arguments);
+        },
+        onEndScreenPlay: function(e, data) {
+          //S.log('EMBED FILE:::::::::::: Play is called now', JSON.stringify(arguments));
+          S.log(arguments);
+        }
+        //,
+        /*onShare: function () {},
+         onError: function (e) {},
+         onNext: function (e) {},
+         onPrev: function (e) {}*/
+      }
+    };
+
+    S.load('playerContainer', config, function(inst) {
+      console.log("Player load Completed");
+      player = inst; //player is lnitialized now...       
+    });
+
+  }
+  </script>
+</body>
+
+</html>

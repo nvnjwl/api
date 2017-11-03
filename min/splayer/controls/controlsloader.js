@@ -1,0 +1,1 @@
+SPL.controls.Loader=function(e,l){var s=this;s.loaderElem=e,s.playerIcon=l,this.hide=function(){_elemAddClass(s.loaderElem,"spl_H"),_elemRemoveClass(s.loaderElem,"spl_O1")},this.show=function(){_elemAddClass(s.playerIcon,"spl_O0"),_elemRemoveClass(s.loaderElem,"spl_H"),_elemAddClass(s.loaderElem,"spl_O1")},this.destroy=function(e){}};
